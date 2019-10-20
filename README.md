@@ -1,0 +1,2 @@
+# TOTN-EmbarrasmentApplication
+This is a repository which contains the implementation of the TOTN-Embarrasment Application, which is a anonymous chat server where people ask doubts and the doubts are visible on everyones screen. The doubts are read and then clarified without asking who asked the doubt in the room. Hence people who think about embarrassment while asking doubts, they don't have to worry about anything. 
