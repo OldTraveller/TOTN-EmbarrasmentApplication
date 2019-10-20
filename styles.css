@@ -1,0 +1,41 @@
+.gap-chor {
+    padding: 1em;
+    margin: 1em;
+    line-break: auto;
+}
+
+#users-message-display {
+    padding: 1em;
+}
+
+.notification {
+    margin-top: 0px;
+}
+
+section {
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.black-border {
+    border: solid black 3px;
+}
+
+.center {
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+img {
+    margin-top: 2em;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid black ;
+    border-radius: 10px;
+}

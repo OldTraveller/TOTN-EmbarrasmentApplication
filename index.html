@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://cdn.scaledrone.com/scaledrone.min.js' type='text/javascript'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>TheOldTravellerNetwork | Main</title>
+  <link rel="icon" href="./logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- HEADING TheOldTravellerNetwork - (S) -->
+<section>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+              <div class="navbar-item black">
+                  <h3>TheOldTravellerNetwork HUB</h3>
+                </div>
+                
+                <a role="button" class="navbar-burger burger" aria-label="menu" data-toggle="collapse" aria-expanded="false" data-target="navbarBasicExample">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+                
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item" href="./index.html">
+                    Home
+                  </a>
+                  <a class="navbar-item" href="./aboutus.html">
+                    About Us
+                  </a>
+                </div>
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <button class="button is-dark" onclick="statsForToday()">
+                        <strong>Stats For Today</strong>
+                      </button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+        </div>
+      </nav>
+</section>
+<!-- HEADING TheOldTravellerNetwork - (E) -->
+
+<!-- TITLE DISPLAYING - (S) -->
+<section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Welcome to TheOldTravellerNetwork Hub 
+        </h1>
+        <h2 class="subtitle">
+          Don't worry it's totally Anonymous ! Ask your silliest of the Doubts !
+        </h2>
+      </div>
+    </div>
+</section>
+<!-- TITLE DISPLAYING - (E) -->
+
+<!-- MIDDLE CONTENT MAIN - (S) -->
+<section class="columns">
+    <section class="column is-3">
+        <div class="notification is-danger has-text-centered black-border" id="online-members">
+          PEOPLE ONLINE : 
+        </div>
+        <article class="message">
+            <div class="message-header">
+              <p> LIST OF ANONYMOUS PEOPLE </p>
+            </div>
+            <div class="message-body">
+              <ol type="1" id="members-list">
+                <!-- MEMBERS WILL BE APPENDED HERE -->
+              </ol>
+            </div>
+        </article>
+  </section>
+  <section class="column is-8">
+      <section class="hero is-dark black-border">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Your Doubts Here !
+              </h1>
+            </div>
+          </div>
+        </section>
+      <!-- YAHA AYEGA SAB MESSAGES -->
+      <div id="users-message-display">
+      <!-- HERE MESSAGES WILL BE DISPLAYED -->
+      </div>
+
+      <!-- MESSAGE ENTRY BAR - (S) -->
+      <section class="container">
+          <section class="columns">
+              <section class="column is-7">
+                  <div class="container gap-chor">
+                    <form id="message-form" onsubmit="return false">
+                      <div class="field has-addons">
+                        <div class="control">
+			<textarea id="users-message" class="textarea" cols="60" placeholder="Type doubts here ..."></textarea> 
+                    	<a class="button is-link is-outlined is-fullwidth" id="sendMessageButton">Send</a>
+                    </form>
+                  </div>
+              </section>
+              <section class="column is-5"></section>
+            </section>
+      </section>
+      <!-- MESSAGE ENTRY BAR - (E) -->
+  </section>
+  <section class="column is-1"></section>
+</section>
+<!-- MIDDLE CONTENT MAIN - (E) -->
+
+<!-- STATS NAV BAR - (S) -->
+<nav class="level is-mobile gap-chor">
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">TOTAL PEOPLE ONLINE</p>
+        <p class="title" id="people-online-count">-</p>
+      </div>
+    </div>
+</nav>
+<!-- STATS NAV BAR - (E) -->
+</body>
+<script src="./script.js"></script>
+<script type="text/javascript">
+(function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#' + burger.dataset.target);
+  
+    burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+</script>
+</html>
